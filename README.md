@@ -1,4 +1,5 @@
-# Activity Duration in Case of Multitasking
+# Multitasking-Aware Estimation of Work-Item Duration via Proportional Overlapping-Time Redistribution
+
 
 ## Overview
 In event logs, activities are often executed concurrently due to resource multitasking. If such overlapping executions are ignored during analysis, the recorded activity durations may be systematically overestimated, which can bias performance metrics and downstream process analysis.
@@ -24,7 +25,7 @@ The following real-life event logs are selected for further processing:
 
 - BPI Challenge 2012  
 - BPI Challenge 2017  
-- ED Log  
+- Emergency Department-ED  *(the dataset is confidential and cannot be publicly shared)*
 - Production  
 - Purchasing  
 
@@ -61,7 +62,7 @@ The corresponding script is provided in:
 #### Step 3: Duration Adjustment and Evaluation
 In this step, the synthetic multitasking event logs are used to:
 - Apply the proposed duration adjustment technique  
-- Apply the method proposed by [*Estrada-Torres et al.*](https://doi.org/10.1016/j.datak.2021.101897)  
+- Apply the method (equal-splitting) proposed by [*Estrada-Torres et al.*](https://doi.org/10.1016/j.datak.2021.101897)  
 - Compare both approaches against the ground-truth durations  
 
 The evaluation is performed using the ***Mean Absolute Percentage Error (MAPE)***. The corresponding script is provided in:
